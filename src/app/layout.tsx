@@ -56,9 +56,26 @@ const code = localFont({
       style: 'normal',
       weight: '900',
     },
+    {
+      path: './fonts/CodePro/CodecPro-Bold.ttf',
+      style: 'normal',
+      weight: '700',
+    },
   ],
   display: 'swap',
   variable: '--font-code',
+});
+
+const poppins = localFont({
+  src: [
+    {
+      path: './fonts/Poppins/Poppins-Regular.ttf',
+      style: 'normal',
+      weight: '400',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-poppins',
 });
 export default function RootLayout({
   children,
@@ -67,7 +84,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${code.variable}`}>{children}</body>
+      <body className={`${code.variable} ${poppins.variable}`}>{children}</body>
     </html>
   );
 }

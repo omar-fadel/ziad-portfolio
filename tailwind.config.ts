@@ -11,6 +11,12 @@ const config: Config = {
       fontFamily: {
         degular: ['var(--font-degular)'],
         code: ['var(--font-code)'],
+        poppins: ['var(--font-poppins)'],
+      },
+      screens: {
+        desktop: '1440px',
+        tablet: '1024px',
+        mobile: '640px',
       },
       colors: {
         background: 'var(--background)',

@@ -1,15 +1,18 @@
 'use client';
 
 import Image from 'next/image';
+
 import Button from '../Button/Button';
 
-interface HeaderProps {}
-
 const Header: React.FC = () => {
+  const handleClickContact = () => {
+    console.log('Contact clicked');
+  };
+
   return (
-    <header className="flex justify-between p-4">
+    <header className="flex justify-between p-6">
       <Image width={43} height={53} alt="logo" src="/images/logo.png" />
-      <Button>CONTACT</Button>
+      <Button onClick={handleClickContact}>CONTACT</Button>
     </header>
   );
 };

@@ -22,7 +22,6 @@
         "newlines-between": "always"
       }
     ],
-    "tailwindcss/classnames-order": "error",
     "no-unused-vars": "error"
   }
 }
