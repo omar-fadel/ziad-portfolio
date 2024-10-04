@@ -2,9 +2,11 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "prettier"
   ],
-  "plugins": ["prettier", "import"],
+
+  "plugins": ["prettier", "import", "tailwindcss"],
   "rules": {
     "import/order": [
       "error",
@@ -20,6 +22,7 @@
         "newlines-between": "always"
       }
     ],
-    "tailwindcss/classnames-order": "error"
+    "tailwindcss/classnames-order": "error",
+    "no-unused-vars": "error"
   }
 }
