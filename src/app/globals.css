@@ -41,3 +41,11 @@ p {
   font-size: 2.8rem;
   line-height: 3.4rem;
 }
+
+button {
+  @apply font-code;
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.6rem;
+  text-align: center;
+}

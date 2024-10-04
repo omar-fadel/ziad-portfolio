@@ -7,53 +7,59 @@ export const metadata: Metadata = {
   description: 'Portfolio of Ziad an animator',
 };
 
-const degular = localFont({
+// const degular = localFont({
+//   src: [
+//     {
+//       path: './fonts/DegularDemo-Thin.otf',
+//       style: 'normal',
+//       weight: '100 200',
+//     },
+//     {
+//       path: './fonts/DegularDemo-Light.otf',
+//       style: 'normal',
+//       weight: '300',
+//     },
+//     {
+//       path: './fonts/DegularDemo-Regular.otf',
+//       style: 'normal',
+//       weight: '400',
+//     },
+//     {
+//       path: './fonts/DegularDemo-Medium.otf',
+//       style: 'normal',
+//       weight: '500',
+//     },
+//     {
+//       path: './fonts/DegularDemo-SemiBold.otf',
+//       style: 'normal',
+//       weight: '600',
+//     },
+//     {
+//       path: './fonts/DegularDemo-Bold.otf',
+//       style: 'normal',
+//       weight: '700',
+//     },
+//     {
+//       path: './fonts/DegularDemo-Black.otf',
+//       style: 'normal',
+//       weight: '800',
+//     },
+//   ],
+//   display: 'swap',
+//   variable: '--font-degular',
+// });
+
+const code = localFont({
   src: [
     {
-      path: './fonts/DegularDemo-Thin.otf',
+      path: './fonts/CodePro/CodecPro-UltraBlack.ttf',
       style: 'normal',
-      weight: '100 200',
-    },
-    {
-      path: './fonts/DegularDemo-Light.otf',
-      style: 'normal',
-      weight: '300',
-    },
-    {
-      path: './fonts/DegularDemo-Regular.otf',
-      style: 'normal',
-      weight: '400',
-    },
-    {
-      path: './fonts/DegularDemo-Medium.otf',
-      style: 'normal',
-      weight: '500',
-    },
-    {
-      path: './fonts/DegularDemo-SemiBold.otf',
-      style: 'normal',
-      weight: '600',
-    },
-    {
-      path: './fonts/DegularDemo-Bold.otf',
-      style: 'normal',
-      weight: '700',
-    },
-    {
-      path: './fonts/DegularDemo-Black.otf',
-      style: 'normal',
-      weight: '800',
+      weight: '900',
     },
   ],
   display: 'swap',
-  variable: '--font-degular',
-});
-const code = localFont({
-  src: './fonts/code_pro_black.otf',
-  display: 'swap',
   variable: '--font-code',
 });
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${degular.variable} ${code.variable}`}>{children}</body>
+      <body className={`${code.variable}`}>{children}</body>
     </html>
   );
 }
