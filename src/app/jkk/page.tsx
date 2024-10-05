@@ -1,5 +1,7 @@
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
+import ProjectVideoGrid from '@/components/ProjectVideoGrid';
+import Image from 'next/image';
 
 export default function JKK() {
   return (
@@ -43,6 +45,25 @@ export default function JKK() {
             </li>
           </ul>
         </div>
+      </Container>
+      <Container>
+        <Image src={'/images/jkk.png'} alt="jkk" width={4096} height={2307} />
+      </Container>
+      <Container className="flex flex-col gap-32 px-96 py-32">
+        <h2 className="text-center">
+          RE<span className="text-pink-600">IMAGINING</span>
+        </h2>
+        <p>
+          Isn’t it nice being able to{' '}
+          <span className="font-bold">recreate</span> one of your favorite
+          shows? Had so much fun with this one.
+        </p>
+        <ProjectVideoGrid
+          top={{ name: 'jkkTop', type: 'image' }}
+          left={{ name: 'jkkLeft', type: 'image' }}
+          right={{ name: 'jkkRight', type: 'image' }}
+          bottom={{ name: 'jkkBottom', type: 'image' }}
+        />
       </Container>
     </>
   );
