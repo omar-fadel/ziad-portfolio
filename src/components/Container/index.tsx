@@ -7,8 +7,8 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, className }) => {
   return (
-    <section className="flex w-screen justify-center">
-      <div className={`max-w-screen-desktop ${className}`}>{children}</div>
+    <section className="max-w-screen flex justify-center">
+      <div className={`flex max-w-screen-desktop ${className}`}>{children}</div>
     </section>
   );
 };

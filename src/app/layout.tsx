@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
 
+import Footer from '@/components/Footer';
+
 export const metadata: Metadata = {
   title: 'Ziad Portfolio',
   description: 'Portfolio of Ziad an animator',
@@ -84,7 +86,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${code.variable} ${poppins.variable}`}>{children}</body>
+      <body className={`${code.variable} ${poppins.variable}`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

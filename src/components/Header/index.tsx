@@ -2,17 +2,13 @@
 
 import Image from 'next/image';
 
-import Button from '../Button/Button';
+import ContactButton from '../ContactButton';
 
 const Header: React.FC = () => {
-  const handleClickContact = () => {
-    console.log('Contact clicked');
-  };
-
   return (
     <header className="flex justify-between p-6">
       <Image width={43} height={53} alt="logo" src="/images/logo.png" />
-      <Button onClick={handleClickContact}>CONTACT</Button>
+      <ContactButton />
     </header>
   );
 };

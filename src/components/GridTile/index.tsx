@@ -6,7 +6,7 @@ interface GridTileProps {
 const GridTile: React.FC<GridTileProps> = ({ className, children }) => {
   return (
     <div
-      className={`flex items-center justify-center overflow-hidden rounded bg-slate-400 ${className}`}
+      className={`flex items-center justify-center overflow-hidden rounded bg-slate-300 p-6 ${className}`}
     >
       {children}
     </div>
