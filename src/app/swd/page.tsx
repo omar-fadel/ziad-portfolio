@@ -8,7 +8,7 @@ export default function SWD() {
   return (
     <>
       <Banner id="swd" videoName="Swd" height={810} />
-      <Container className="flex flex-col items-center">
+      <Container className="flex flex-col items-center py-16">
         <TextBanner
           blackNode="Saudi"
           color="beige"
@@ -129,6 +129,41 @@ export default function SWD() {
             imageName="dalma"
           />
         </div>
+      </Container>
+      <Container
+        background="black"
+        className="flex flex-col items-center gap-16 p-16"
+      >
+        <h2 className="text-white">More stunning visuals.</h2>
+        <Image
+          src={'/images/visualsOne.png'}
+          width={4092}
+          height={2304}
+          alt="visuals"
+          className="rounded"
+        />
+        <Image
+          src={'/images/visualsTwo.png'}
+          width={4092}
+          height={2304}
+          alt="visuals"
+          className="rounded"
+        />
+        <div className="grid grid-cols-3 justify-end">
+          <h2 className="flex items-end text-white">
+            From all of us women who never quit.
+          </h2>
+          <Image
+            className="z-0 col-span-2 col-start-2"
+            width={2249}
+            height={2222}
+            alt="tennis"
+            src={'/images/tennis.png'}
+          />
+        </div>
+      </Container>
+      <Container className="flex flex-col items-center gap-16 p-16">
+        <h2 className="uppercase">—Till we beat you again.</h2>
       </Container>
     </>
   );

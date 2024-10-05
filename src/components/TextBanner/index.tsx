@@ -1,5 +1,5 @@
 interface TextBannerProps {
-  color: 'beige';
+  color: 'beige' | 'forest';
   coloredNode: React.ReactNode;
   blackNode: React.ReactNode;
 }

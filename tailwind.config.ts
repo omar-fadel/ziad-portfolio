@@ -22,6 +22,7 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         beige: 'var(--beige)',
+        forest: 'var(--forest)',
       },
     },
   },
