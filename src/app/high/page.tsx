@@ -23,7 +23,17 @@ export default function High() {
             explore and diversify my abilities.
           </p>
         </div>
-        <Image src={'/images/high.png'} width={4096} height={2306} alt="high" />
+      </Container>
+      <Container>
+        <Image
+          src={'/images/high.png'}
+          className="mb-32"
+          width={4096}
+          height={2306}
+          alt="high"
+        />
+      </Container>
+      <Container className="flex flex-col gap-32 px-32 pb-32">
         <h2 className="px-96 uppercase">
           What in the name of <span className="text-pink-600">mushrooms</span>{' '}
           is happening?
