@@ -21,10 +21,9 @@ const Banner: React.FC<BannerProps> = ({
   return (
     <Container className="grid">
       <video
-        className="z-0 col-start-1 row-start-1"
+        className="z-0 col-start-1 row-start-1 h-full w-full object-cover"
         autoPlay
-        width={width}
-        height={height}
+        style={{ height, width }}
         muted
         loop
         id={id}
