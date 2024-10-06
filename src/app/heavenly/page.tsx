@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
+import ProjectVideoGrid from '@/components/ProjectVideoGrid';
 
 export default function Heavenly() {
   return (
@@ -28,6 +29,14 @@ export default function Heavenly() {
           An <span className="text-beige">Angel</span> is born.
         </h2>
         <p>You read that right! This is how angels are born... I swear!</p>
+      </Container>
+      <Container className="p-16">
+        <ProjectVideoGrid
+          top={{ name: 'heavenlyTop', type: 'image' }}
+          left={{ name: 'heavenlyLeft', type: 'image' }}
+          right={{ name: 'heavenlyRight', type: 'image' }}
+          bottom={{ name: 'heavenlyBottom', type: 'image' }}
+        />
       </Container>
     </>
   );
