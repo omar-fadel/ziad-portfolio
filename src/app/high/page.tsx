@@ -1,8 +1,8 @@
+import Image from 'next/image';
+
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import ProjectVideoGrid from '@/components/ProjectVideoGrid';
-import TextBanner from '@/components/TextBanner';
-import Image from 'next/image';
 
 export default function High() {
   return (
@@ -43,6 +43,8 @@ export default function High() {
           <span className="font-bold">inspired abstract art</span>
           where I am testing my abilities.
         </p>
+      </Container>
+      <Container className="p-16">
         <ProjectVideoGrid
           top={{ name: 'highTop', type: 'image' }}
           left={{ name: 'highLeft', type: 'image' }}

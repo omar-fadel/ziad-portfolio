@@ -1,8 +1,9 @@
+import Image from 'next/image';
+
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import HeroSection from '@/components/HeroSection';
 import TextBanner from '@/components/TextBanner';
-import Image from 'next/image';
 
 export default function SWD() {
   return (

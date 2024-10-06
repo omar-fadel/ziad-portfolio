@@ -1,7 +1,8 @@
+import Image from 'next/image';
+
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import ProjectVideoGrid from '@/components/ProjectVideoGrid';
-import Image from 'next/image';
 
 export default function JKK() {
   return (
@@ -58,6 +59,8 @@ export default function JKK() {
           <span className="font-bold">recreate</span> one of your favorite
           shows? Had so much fun with this one.
         </p>
+      </Container>
+      <Container className="p-16">
         <ProjectVideoGrid
           top={{ name: 'jkkTop', type: 'image' }}
           left={{ name: 'jkkLeft', type: 'image' }}

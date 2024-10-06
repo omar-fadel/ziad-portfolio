@@ -1,8 +1,9 @@
+import Image from 'next/image';
+
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import ProjectVideoGrid from '@/components/ProjectVideoGrid';
 import TextBanner from '@/components/TextBanner';
-import Image from 'next/image';
 
 export default function df() {
   return (
@@ -53,6 +54,8 @@ export default function df() {
             ways. Really soothing working on all the green nature colors.
           </p>
         </div>
+      </Container>
+      <Container className="p-16">
         <ProjectVideoGrid
           top={{ name: 'df-top', type: 'image' }}
           left={{ name: 'df-left', type: 'image' }}
