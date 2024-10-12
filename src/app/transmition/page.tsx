@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
+import ProjectTile from '@/components/ProjectTile';
+import projectsProps from '@/components/Projects';
 
 export default function Transmition() {
   return (
@@ -241,6 +243,14 @@ export default function Transmition() {
           alt="logo"
         />
       </Container>
+      <div className="flex flex-col items-center justify-center gap-12 pb-16">
+        <h2>There is more.</h2>
+        <div className="flex flex-wrap items-center justify-center gap-12 px-12">
+          <ProjectTile {...projectsProps['swd']} />
+          <ProjectTile {...projectsProps['spiderman']} />
+          <ProjectTile {...projectsProps['dreamForest']} />
+        </div>
+      </div>
     </>
   );
 }

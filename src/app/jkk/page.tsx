@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import ProjectVideoGrid from '@/components/ProjectVideoGrid';
+import ProjectTile from '@/components/ProjectTile';
+import projectsProps from '@/components/Projects';
 
 export default function JKK() {
   return (
@@ -68,6 +70,14 @@ export default function JKK() {
           bottom={{ name: 'jkkBottom', type: 'image' }}
         />
       </Container>
+      <div className="flex flex-col items-center justify-center gap-12 pb-16">
+        <h4>There is more.</h4>
+        <div className="flex flex-wrap items-center justify-center gap-12 px-12">
+          <ProjectTile {...projectsProps['swd']} />
+          <ProjectTile {...projectsProps['spiderman']} />
+          <ProjectTile {...projectsProps['dreamForest']} />
+        </div>
+      </div>
     </>
   );
 }

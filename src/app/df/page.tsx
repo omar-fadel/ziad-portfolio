@@ -4,6 +4,8 @@ import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import ProjectVideoGrid from '@/components/ProjectVideoGrid';
 import TextBanner from '@/components/TextBanner';
+import ProjectTile from '@/components/ProjectTile';
+import projectsProps from '@/components/Projects';
 
 export default function df() {
   return (
@@ -63,6 +65,14 @@ export default function df() {
           bottom={{ name: 'df-bottom', type: 'image' }}
         />
       </Container>
+      <div className="flex flex-col items-center justify-center gap-12 pb-16">
+        <h4>There is more.</h4>
+        <div className="flex flex-wrap items-center justify-center gap-12 px-12">
+          <ProjectTile {...projectsProps['spiderman']} />
+          <ProjectTile {...projectsProps['jkk']} />
+          <ProjectTile {...projectsProps['sneakers']} />
+        </div>
+      </div>
     </>
   );
 }

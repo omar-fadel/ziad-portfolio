@@ -4,6 +4,8 @@ import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
 import HeroSection from '@/components/HeroSection';
 import TextBanner from '@/components/TextBanner';
+import ProjectTile from '@/components/ProjectTile';
+import projectsProps from '@/components/Projects';
 
 export default function SWD() {
   return (
@@ -166,6 +168,14 @@ export default function SWD() {
       <Container className="flex flex-col items-center gap-16 p-16">
         <h2 className="uppercase">—Till we beat you again.</h2>
       </Container>
+      <div className="flex flex-col items-center justify-center gap-12 pb-16">
+        <h4>There is more.</h4>
+        <div className="flex flex-wrap items-center justify-center gap-12 px-12">
+          <ProjectTile {...projectsProps['high']} />
+          <ProjectTile {...projectsProps['dreamForest']} />
+          <ProjectTile {...projectsProps['spiderman']} />
+        </div>
+      </div>
     </>
   );
 }

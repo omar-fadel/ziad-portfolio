@@ -1,17 +1,14 @@
 'use client';
-import { useCallback } from 'react';
+import Link from 'next/link';
 
 const ContactButton: React.FC = () => {
-  const handleClickContactButton = useCallback(() => {
-    console.log('Contact button clicked');
-  }, []);
   return (
-    <button
-      className="h-16 rounded bg-red-500 px-6 uppercase text-white"
-      onClick={handleClickContactButton}
+    <Link
+      href={'/contact'}
+      className="flex h-16 max-w-[20rem] items-center justify-center rounded bg-red-500 px-6 uppercase text-white"
     >
-      CONTACT
-    </button>
+      <p className="text-[1.5rem] font-bold">CONTACT</p>
+    </Link>
   );
 };
 
