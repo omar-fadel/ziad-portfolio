@@ -231,7 +231,7 @@ export default function Transmition() {
           />
         </div>
       </Container>
-      <div className="grid px-32 py-32">
+      <Container className="grid px-32 py-32">
         <Image
           src={'/images/transmitionLogo.png'}
           width={1022}
@@ -239,7 +239,7 @@ export default function Transmition() {
           className="h-full w-full"
           alt="logo"
         />
-      </div>
+      </Container>
     </>
   );
 }
