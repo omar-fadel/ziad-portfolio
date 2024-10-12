@@ -1,4 +1,4 @@
-import GridTile from '../GridTile';
+import GridTile from '../../components/GridTile';
 import './projects-grid.css';
 
 const ProjectsGrid: React.FC = () => {

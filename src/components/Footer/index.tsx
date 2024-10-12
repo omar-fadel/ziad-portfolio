@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import ContactButton from '../ContactButton';
 import Container from '../Container';
-import Link from 'next/link';
 
 const Footer = () => {
   return (

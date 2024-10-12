@@ -1,4 +1,4 @@
-import ProjectTile, { ProjectTileProps } from '../ProjectTile';
+import { ProjectTileProps } from '../ProjectTile';
 
 type availableProjects =
   | 'swd'

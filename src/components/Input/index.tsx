@@ -19,13 +19,13 @@ const Input: React.FC<InputProps> = ({
       <div className="my-3 flex rounded-lg border-[3px] border-green-700 p-3">
         {isTextArea ? (
           <textarea
-            className="font-lato w-full text-[1.6rem] outline-none"
+            className="w-full font-lato text-[1.6rem] outline-none"
             value={value}
             onChange={(e) => onChange(e.target.value)}
           />
         ) : (
           <input
-            className="font-lato w-full text-[1.6rem] outline-none"
+            className="w-full font-lato text-[1.6rem] outline-none"
             value={value}
             onChange={(e) => onChange(e.target.value)}
           />

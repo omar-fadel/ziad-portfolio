@@ -1,8 +1,9 @@
+import Link from 'next/link';
+
 import Container from '@/components/Container';
 import Banner from '@/components/Banner/Banner';
 import ProjectsGrid from '@/components/ProjectsGrid/ProjectsGrid';
 import ContactSection from '@/components/ContactSection';
-import Link from 'next/link';
 
 export default function Home() {
   return (
