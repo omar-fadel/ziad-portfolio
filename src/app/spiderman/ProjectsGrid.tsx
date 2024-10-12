@@ -1,5 +1,5 @@
 import GridTile from '../GridTile';
-import "./projects-grid.css"
+import './projects-grid.css';
 
 const ProjectsGrid: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const ProjectsGrid: React.FC = () => {
       </GridTile>
       <div
         id="transmition"
-        className="relative col-span-1 row-span-2 h-[540px] rounded bg-black"
+        className="relative col-span-1 row-span-2 h-[540px] overflow-hidden rounded bg-black hover:cursor-pointer"
       >
         <video
           className="h-full w-full"
@@ -23,13 +23,11 @@ const ProjectsGrid: React.FC = () => {
           <source src="/videos/Transmition.mp4" />
           Your browser does not support the video tag.
         </video>
-        <div id="backdrop" className="absolute inset-0 bg-slate-400" />
-        <p
-          id="word"
-          className="absolute left-[50%] top-[-60px] z-10 translate-x-[-50%] uppercase text-white"
-        >
-          Transmition
-        </p>
+        <div
+          id="backdrop"
+          className="pointer-events-none absolute inset-0 z-10 bg-slate-400"
+        />
+        <p id="word">Transmition</p>
       </div>
       <GridTile className="col-span-4 row-span-2">
         <h1 className="mx-6 text-center uppercase">Saudi women’s day</h1>
