@@ -9,10 +9,10 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
     <button
-      className="h-16 rounded bg-red-600 px-6 text-white hover:cursor-pointer hover:bg-red-800"
+      className="h-20 rounded bg-red-600 px-6 text-white hover:cursor-pointer hover:bg-red-800"
       onClick={onClick}
     >
-      {children}
+      <p className="font-code font-bold">{children}</p>
     </button>
   );
 };

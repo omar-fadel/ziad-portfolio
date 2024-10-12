@@ -11,6 +11,7 @@ const config: Config = {
         degular: ['var(--font-degular)'],
         code: ['var(--font-code)'],
         poppins: ['var(--font-poppins)'],
+        lato: ['var(--font-lato)'],
       },
       screens: {
         desktop: '1440px',

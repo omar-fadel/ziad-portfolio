@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
+import { Lato } from 'next/font/google';
 
 import Footer from '@/components/Footer';
 
@@ -51,6 +52,12 @@ export const metadata: Metadata = {
 //   variable: '--font-degular',
 // });
 
+const lato = Lato({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-lato',
+});
+
 const code = localFont({
   src: [
     {
@@ -86,7 +93,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${code.variable} ${poppins.variable}`}>
+      <body className={`${code.variable} ${poppins.variable} ${lato.variable}`}>
         {children}
         <Footer />
       </body>

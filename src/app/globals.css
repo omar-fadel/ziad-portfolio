@@ -57,6 +57,13 @@ p {
   font-weight: 400;
 }
 
+label {
+  @apply font-lato;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: bold
+}
+
 button {
   @apply font-code;
   font-size: 1.4rem;

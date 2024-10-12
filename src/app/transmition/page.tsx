@@ -1,6 +1,7 @@
+import Image from 'next/image';
+
 import Banner from '@/components/Banner/Banner';
 import Container from '@/components/Container';
-import Image from 'next/image';
 
 export default function Transmition() {
   return (
