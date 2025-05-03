@@ -7,7 +7,7 @@ const ProjectsGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-4 grid-rows-12 gap-16 p-20">
       <GridTile
-        className="col-span-3 row-span-2 bg-[url('/thumbnails/high.png')] bg-cover bg-center text-red-300"
+        className="col-span-4 row-span-2 bg-[url('/thumbnails/high.png')] bg-cover bg-center text-red-300 md:col-span-3"
         link="/high"
         HoveredComponent={
           <video
@@ -27,7 +27,7 @@ const ProjectsGrid: React.FC = () => {
       </GridTile>
       <div
         id="transmition"
-        className="relative col-span-1 row-span-2 h-[540px] rounded bg-black"
+        className="relative col-span-4 row-span-2 h-[540px] rounded bg-black md:col-span-1"
       >
         <Link href="/transmition">
           <video
