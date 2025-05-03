@@ -11,7 +11,9 @@ export default function Sneackers() {
     <>
       <Banner videoName="sneakers" id="Sneakers" />
       <Container className="flex flex-col gap-32 px-96 py-32">
-        <h1 className="uppercase text-orange-600">Sneakers</h1>
+        <h1 className="md:text-12xl text-center text-8xl uppercase text-orange-600">
+          Sneakers
+        </h1>
         <p className="font-bold">Personal Project</p>
         <p>
           Trying a couple of new things in my animations.

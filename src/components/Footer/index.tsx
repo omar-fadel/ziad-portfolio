@@ -26,7 +26,7 @@ const Footer = () => {
             <h3 className="hover:cursor-pointer hover:text-red-700">Contact</h3>
           </Link>
         </article>
-        <article className="col-span flex flex-col gap-2">
+        <article className="col-span-2 flex flex-col gap-2 md:col-span-1">
           <h3>And More...</h3>
           <div className="flex items-center gap-4">
             <Image

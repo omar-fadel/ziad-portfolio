@@ -9,8 +9,8 @@ export default function Transmition() {
   return (
     <>
       <Banner videoName="transmition" id="transmition" />
-      <Container className="flex flex-col gap-32 px-96 py-32">
-        <h1>TRANSMITION</h1>
+      <Container className="flex flex-col gap-32 px-0 py-32 md:px-96">
+        <h1 className="md:text-12xl text-center text-8xl">TRANSMITION</h1>
         <div>
           <p>
             <span className="font-bold">Project:</span> Transmission

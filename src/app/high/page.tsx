@@ -10,8 +10,8 @@ export default function High() {
   return (
     <>
       <Banner videoName="high" id="High" />
-      <Container className="flex flex-col gap-32 px-32 pb-32">
-        <div className="flex flex-col items-center gap-32 px-96 py-16">
+      <Container className="flex flex-col gap-32">
+        <div className="flex flex-col items-center gap-32">
           <h1 className="w-full">
             <span className="text-black">H</span>
             <span className="text-pink-900">I</span>
@@ -35,12 +35,12 @@ export default function High() {
           alt="high"
         />
       </Container>
-      <Container className="flex flex-col gap-32 px-32 pb-32">
-        <h2 className="px-96 uppercase">
+      <Container className="flex flex-col gap-32">
+        <h2 className="md:text-12xl text-6xl uppercase">
           What in the name of <span className="text-pink-600">mushrooms</span>{' '}
           is happening?
         </h2>
-        <p>
+        <p className="max-w-screen 12 text-center text-4xl">
           Couldn’t tell you if I wanted to, just some{' '}
           <span className="font-bold">inspired abstract art</span>
           where I am testing my abilities.
@@ -54,7 +54,7 @@ export default function High() {
           bottom={{ name: 'highBottom', type: 'video' }}
         />
       </Container>
-      <div className="flex flex-col items-center justify-center gap-12 pb-16">
+      <div className="flex flex-col items-center justify-center gap-12 pb-16 text-center">
         <h4>There is more.</h4>
         <div className="flex flex-wrap items-center justify-center gap-12 px-12">
           <ProjectTile {...projectsProps['transmition']} />

@@ -89,8 +89,8 @@ const ProjectsGrid: React.FC = () => {
           </video>
         }
       >
-        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
-          Dream Forset
+        <h1 className="mx-6 text-center text-5xl uppercase md:text-[82px]">
+          Dream Forest
         </h1>
       </GridTile>
       <GridTile
