@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-1 items-center overflow-hidden">
           <h2 className="mx-12 mt-20 w-full px-8 text-6xl uppercase text-white tablet:w-2/5 tablet:text-8xl">
             getting 2d animation done for{' '}
-            <span className="underline">gaming studios & writers.</span>
+            <span className="underline">video game companies & writers.</span>
           </h2>
         </div>
       </Banner>
