@@ -23,9 +23,7 @@ const Banner: React.FC<BannerProps> = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const video = videoRef.current;
-    if (video) {
-      video.controls = true;
-    }
+
     return () => {
       if (video) {
         video.currentTime = 0;
@@ -41,6 +39,7 @@ const Banner: React.FC<BannerProps> = ({
         autoPlay
         style={{ height, width }}
         loop
+        muted
         controls
         id={id}
       >
