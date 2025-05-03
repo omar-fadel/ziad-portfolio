@@ -7,7 +7,7 @@ import ContactButton from '../ContactButton';
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-between p-6">
+    <header className="z-10 flex justify-between p-6">
       <Link href="/">
         <Image width={43} height={53} alt="logo" src="/images/logo.png" />
       </Link>
