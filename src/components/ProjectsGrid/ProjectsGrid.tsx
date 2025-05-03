@@ -5,9 +5,9 @@ import './projects-grid.css';
 
 const ProjectsGrid: React.FC = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-9 gap-16 p-20">
+    <div className="grid grid-cols-4 grid-rows-12 gap-16 p-20">
       <GridTile
-        className="col-span-3 row-span-2"
+        className="col-span-3 row-span-2 bg-[url('/thumbnails/high.png')] bg-cover bg-center text-red-300"
         link="/high"
         HoveredComponent={
           <video
@@ -53,7 +53,7 @@ const ProjectsGrid: React.FC = () => {
       </div>
       <GridTile
         link="/swd"
-        className="col-span-4 row-span-2"
+        className="col-span-4 row-span-2 bg-[url('/thumbnails/womensday.png')] bg-cover bg-center"
         HoveredComponent={
           <video
             width={200}
@@ -74,7 +74,7 @@ const ProjectsGrid: React.FC = () => {
       </GridTile>
       <GridTile
         link="/df"
-        className="col-span-2 row-span-1"
+        className="col-span-2 row-span-1 bg-[url('/thumbnails/dreamforest.png')] bg-cover bg-center text-white"
         HoveredComponent={
           <video
             width={1350}
@@ -94,7 +94,7 @@ const ProjectsGrid: React.FC = () => {
         </h1>
       </GridTile>
       <GridTile
-        className="col-span-2 row-span-1"
+        className="col-span-2 row-span-1 bg-[url('/thumbnails/jkk.png')] bg-cover bg-center"
         link="/jkk"
         HoveredComponent={
           <video
@@ -115,7 +115,7 @@ const ProjectsGrid: React.FC = () => {
         </h1>
       </GridTile>
       <GridTile
-        className="col-span-4 row-span-2"
+        className="col-span-4 row-span-2 bg-[url('/thumbnails/sneakers.png')] bg-cover bg-center text-white"
         link="/sneakers"
         HoveredComponent={
           <video
@@ -132,12 +132,33 @@ const ProjectsGrid: React.FC = () => {
         }
       >
         <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
-          Spider man
+          Sneakers
+        </h1>
+      </GridTile>
+      <GridTile
+        className="col-span-4 row-span-2 bg-[url('/thumbnails/spiderman.png')] bg-cover bg-center text-white"
+        link="/spiderman"
+        HoveredComponent={
+          <video
+            width={1350}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/spiderman.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
+          Spiderman
         </h1>
       </GridTile>
       <GridTile
         link="/heavenly"
-        className="col-start-1 col-end-5 row-start-8 row-end-10"
+        className="col-start-1 col-end-5 row-start-8 row-end-10 bg-[url('/thumbnails/heavenly.png')] bg-cover bg-center text-white"
         HoveredComponent={
           <video
             width={1350}

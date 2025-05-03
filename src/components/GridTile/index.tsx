@@ -18,7 +18,7 @@ const GridTile: React.FC<GridTileProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden rounded bg-slate-300 ${className}`}
+      className={`relative flex items-center justify-center overflow-hidden rounded ${className}`}
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
