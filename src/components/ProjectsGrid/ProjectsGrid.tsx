@@ -1,53 +1,160 @@
+import Link from 'next/link';
+
 import GridTile from '../GridTile';
 import './projects-grid.css';
 
 const ProjectsGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-4 grid-rows-9 gap-16 p-20">
-      <GridTile className="col-span-3 row-span-2">
+      <GridTile
+        className="col-span-3 row-span-2"
+        link="/high"
+        HoveredComponent={
+          <video
+            width={200}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/high.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
         <h1 className="mx-6 text-center uppercase">High</h1>
       </GridTile>
       <div
         id="transmition"
         className="relative col-span-1 row-span-2 h-[540px] rounded bg-black"
       >
-        <video
-          className="h-full w-full"
-          autoPlay
-          width={322}
-          height={560}
-          muted
-          loop
-          id="transmition"
-        >
-          <source src="/videos/Transmition.mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div id="backdrop" className="absolute inset-0 bg-slate-400" />
-        <p
-          id="word"
-          className="absolute left-[50%] top-[-60px] z-10 translate-x-[-50%] uppercase text-white"
-        >
-          Transmition
-        </p>
+        <Link href="/transmition">
+          <video
+            className="h-full w-full"
+            autoPlay
+            width={1360}
+            height={540}
+            muted
+            loop
+            id="transmition"
+          >
+            <source src="/videos/Transmition.mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div id="backdrop" className="absolute inset-0 bg-slate-400" />
+          <p
+            id="word"
+            className="absolute left-[50%] top-[-60px] z-10 translate-x-[-50%] uppercase text-white"
+          >
+            Transmition
+          </p>
+        </Link>
       </div>
-      <GridTile className="col-span-4 row-span-2">
-        <h1 className="mx-6 text-center uppercase">Saudi women’s day</h1>
+      <GridTile
+        link="/swd"
+        className="col-span-4 row-span-2"
+        HoveredComponent={
+          <video
+            width={200}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/Swd.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
+          Saudi women’s day
+        </h1>
       </GridTile>
-      <GridTile className="col-span-2 row-span-1">
-        <h1 className="mx-6 text-center uppercase">Dream Forset</h1>
+      <GridTile
+        link="/df"
+        className="col-span-2 row-span-1"
+        HoveredComponent={
+          <video
+            width={1350}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/dreamForest.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
+          Dream Forset
+        </h1>
       </GridTile>
-      <GridTile className="col-span-2 row-span-1">
-        <h1 className="mx-6 text-center uppercase">JKK</h1>
+      <GridTile
+        className="col-span-2 row-span-1"
+        link="/jkk"
+        HoveredComponent={
+          <video
+            width={1350}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/jkk.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
+          JKK
+        </h1>
       </GridTile>
-      <GridTile className="col-span-4 row-span-2">
-        <h1 className="mx-6 text-center uppercase">Sneakers</h1>
+      <GridTile
+        className="col-span-4 row-span-2"
+        link="/sneakers"
+        HoveredComponent={
+          <video
+            width={1350}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/sneakers.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-8xl uppercase md:text-[82px]">
+          Spider man
+        </h1>
       </GridTile>
-      <GridTile className="col-start-1 col-end-3 row-start-8 row-end-10">
-        <h1 className="mx-6 text-center uppercase">Spider man</h1>
-      </GridTile>
-      <GridTile className="col-start-3 col-end-5 row-start-8 row-end-10">
-        <h1 className="mx-6 text-center uppercase">Heavenly</h1>
+      <GridTile
+        link="/heavenly"
+        className="col-start-1 col-end-5 row-start-8 row-end-10"
+        HoveredComponent={
+          <video
+            width={1350}
+            height={540}
+            className="h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/videos/heavenly.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        }
+      >
+        <h1 className="mx-6 text-center text-6xl uppercase md:text-[82px]">
+          Heavenly
+        </h1>
       </GridTile>
     </div>
   );

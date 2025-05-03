@@ -35,7 +35,16 @@ const Footer = () => {
               width={21}
               height={21}
             />
-            <h3>Instagram</h3>
+            <Link
+              href={
+                'https://www.instagram.com/ziadmagdyanimationz?igsh=cXI4bmQ1N21wb2Jh'
+              }
+              target="_blank"
+            >
+              <h3 className="hover:cursor-pointer hover:text-red-700">
+                Instagram
+              </h3>
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <Image
@@ -44,7 +53,9 @@ const Footer = () => {
               width={21}
               height={21}
             />
-            <h3>Email</h3>
+            <Link href={'mailto:Ziad.magdy.a1@gmail.com'}>
+              <h3 className="hover:cursor-pointer hover:text-red-700">Email</h3>
+            </Link>
           </div>
         </article>
       </footer>

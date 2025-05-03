@@ -1,4 +1,6 @@
-import { ReactNode } from 'react';
+'use client';
+
+import { ReactNode, useEffect, useRef } from 'react';
 
 import Header from '../Header';
 import Container from '../Container';
@@ -18,14 +20,28 @@ const Banner: React.FC<BannerProps> = ({
   videoName,
   children,
 }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.controls = true;
+    }
+    return () => {
+      if (video) {
+        video.currentTime = 0;
+      }
+    };
+  }, []);
+
   return (
     <Container className="grid">
       <video
+        ref={videoRef}
         className="z-0 col-start-1 row-start-1 h-full w-full object-cover"
         autoPlay
         style={{ height, width }}
-        muted
         loop
+        // controls
         id={id}
       >
         <source src={`/videos/${videoName}.mp4`} />
